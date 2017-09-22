@@ -13,6 +13,20 @@ body{
   color: $color_hightlight;
 }
 
+//overwrite bootstrap button (using 'button' for this rule won't work!)
+.btn.btn-primary.btn-lg {
+  width: 11.4rem;
+  padding: 1.3rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: $color_hightlight ;
+  &:hover{
+    background-color: $color_hightlight ;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  }
+  &:active{
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+  }
+}
 
 // NAVIGATION
 nav{
@@ -42,70 +56,25 @@ nav{
     -1px  1px 0 #000,
      1px  1px 0 #000;
 
-  h1 {
-    font-family: 'Monoton', cursive;
-    text-transform: uppercase;
-    font-size: 7.1rem;
-  }
+   h1 {
+     font-family: 'Monoton', cursive;
+     text-transform: uppercase;
+     font-size: 7.1rem;
+   }
 
-  p{
-    width: 51.3rem;
-    margin: auto;
-    padding-bottom: 8rem;
-  }
-
-  button{
-    width: 11.4rem;
-    padding: 1.3rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    background-color: $color_hightlight;
-    &:hover{
-      background-color: $color_hightlight;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
-    }
-    &:active{
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
-    }
+   p {
+     width: 51.3rem;
+     margin: auto;
+     padding-bottom: 8rem;
   }
 }
 
-.jumbotron {
-  height: 44rem;
-  padding-top: 10rem;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-
-  h1 {
-    font-family: 'Monoton', cursive;
-    text-transform: uppercase;
-    font-size: 7.1rem;
-  }
-
-  p{
-    width: 51.3rem;
-    margin: auto;
-    padding-bottom: 8rem;
-  }
-
-  button{
-    width: 11.4rem;
-    padding: 1.3rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    background-color: $color_hightlight;
-    &:hover{
-      background-color: $color_hightlight;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+@media only screen and (max-width: 800px) {
+  .jumbotron{
+    h1{
+    font-size: 5.7rem;
     }
-    &:active{
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+    p{width: auto;
     }
   }
 }
@@ -192,17 +161,17 @@ footer{
     margin: auto;
   }
 
-  button{
-    width: 11.4rem;
-    padding: 1.3rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    background-color: $color_hightlight;
-    &:hover{
-      background-color: $color_hightlight;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
-    }
-    &:active{
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
-    }
-  }
+  // button{
+  //   width: 11.4rem;
+  //   padding: 1.3rem;
+  //   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  //   background-color: $color_hightlight;
+  //   &:hover{
+  //     background-color: $color_hightlight;
+  //     box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  //   }
+  //   &:active{
+  //     box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+  //   }
+  // }
 }

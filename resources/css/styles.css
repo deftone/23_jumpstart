@@ -7,6 +7,17 @@ body {
 .highlighted {
   color: #399bd1; }
 
+.btn.btn-primary.btn-lg {
+  width: 11.4rem;
+  padding: 1.3rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: #399bd1; }
+  .btn.btn-primary.btn-lg:hover {
+    background-color: #399bd1;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9); }
+  .btn.btn-primary.btn-lg:active {
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.5); }
+
 nav {
   font-weight: bold;
   font-size: 1.1rem; }
@@ -34,45 +45,12 @@ nav {
     width: 51.3rem;
     margin: auto;
     padding-bottom: 8rem; }
-  .jumbotron button {
-    width: 11.4rem;
-    padding: 1.3rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    background-color: #399bd1; }
-    .jumbotron button:hover {
-      background-color: #399bd1;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.9); }
-    .jumbotron button:active {
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5); }
 
-.jumbotron {
-  height: 44rem;
-  padding-top: 10rem;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; }
+@media only screen and (max-width: 800px) {
   .jumbotron h1 {
-    font-family: 'Monoton', cursive;
-    text-transform: uppercase;
-    font-size: 7.1rem; }
+    font-size: 5.7rem; }
   .jumbotron p {
-    width: 51.3rem;
-    margin: auto;
-    padding-bottom: 8rem; }
-  .jumbotron button {
-    width: 11.4rem;
-    padding: 1.3rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    background-color: #399bd1; }
-    .jumbotron button:hover {
-      background-color: #399bd1;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.9); }
-    .jumbotron button:active {
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5); }
-
+    width: auto; } }
 .jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg"); }
 
@@ -128,15 +106,5 @@ footer {
     width: 42rem;
     padding: 1.4rem;
     margin: auto; }
-  footer button {
-    width: 11.4rem;
-    padding: 1.3rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    background-color: #399bd1; }
-    footer button:hover {
-      background-color: #399bd1;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.9); }
-    footer button:active {
-      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=styles.css.map */
