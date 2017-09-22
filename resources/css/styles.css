@@ -7,6 +7,18 @@ body {
 .highlighted {
   color: #399bd1; }
 
+.image-container {
+  overflow: hidden; }
+  .image-container img {
+    opacity: 0.6;
+    transition: transform 0.5s, opacity 0.5s; }
+    .image-container img:hover {
+      opacity: 1;
+      transform: scale(1.3, 1.3); }
+
+img {
+  width: 100%; }
+
 .btn.btn-primary.btn-lg {
   width: 11.4rem;
   padding: 1.3rem;
@@ -22,7 +34,6 @@ nav {
   font-weight: bold;
   font-size: 1.1rem; }
 
-/* Bootstrap Overrides */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover {
   background-color: inherit;
@@ -50,7 +61,14 @@ nav {
   .jumbotron h1 {
     font-size: 5.7rem; }
   .jumbotron p {
-    width: auto; } }
+    width: auto;
+    padding-bottom: 5rem; } }
+@media only screen and (max-width: 600px) {
+  .jumbotron h1 {
+    font-size: 4.5rem; }
+  .jumbotron p {
+    width: auto;
+    padding-bottom: 3rem; } }
 .jumbotron-bike {
   background-image: url("../images/jumbotron-bike.jpg"); }
 
@@ -63,30 +81,6 @@ nav {
 .jumbotron-duffel {
   background-image: url("../images/jumbotron-duffel.jpg"); }
 
-.image-container {
-  overflow: hidden; }
-
-.image-container img {
-  width: 100%;
-  opacity: .6;
-  transition-property: opacity;
-  transition-duration: 0.7s;
-  transition-property: transform;
-  transition-duration: 0.7s; }
-  .image-container img:hover {
-    opacity: 1;
-    transform: scale(1.3, 1.3); }
-
-.feature .image-container {
-  height: 23.5rem; }
-
-.projects .image-container {
-  height: 16.7rem; }
-
-@media only screen and (max-width: 991px) {
-  .feature .image-container,
-  .projects .image-container {
-    height: 27rem; } }
 section h2 {
   padding: 20px 0;
   color: #399bd1;
@@ -106,5 +100,10 @@ footer {
     width: 42rem;
     padding: 1.4rem;
     margin: auto; }
+
+@media only screen and (max-width: 800px) {
+  footer p {
+    width: auto;
+    padding-bottom: 3rem; } }
 
 /*# sourceMappingURL=styles.css.map */
