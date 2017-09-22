@@ -9,17 +9,12 @@ body{
   font-family: "Open Sans", sans-serif;
 }
 
-
-h2{
-  color: $color_hightlight;
-  font-weight: bold;
-  font-size: 1.7rem;
-}
-
 .highlighted{
   color: $color_hightlight;
 }
 
+
+// NAVIGATION
 nav{
   font-weight: bold;
   font-size: 1.1rem;
@@ -32,6 +27,7 @@ nav{
   color: $color_hightlight;
 }
 
+// JUMBOTRON
 .jumbotron {
   height: 44rem;
   padding-top: 10rem;
@@ -89,6 +85,7 @@ nav{
   background-image: url("../images/jumbotron-duffel.jpg");
 }
 
+// IMAGE CONTAINER
 .image-container{
   overflow: hidden;
   // border: 1px solid red;
@@ -99,11 +96,11 @@ nav{
   height: 23.5rem;
 }
 
-@media only screen and (max-width: 1200px) {
-  .feature .image-container{
-    height: 25rem;
-  }
-}
+// @media only screen and (max-width: 1200px) {
+//   .feature .image-container{
+//     height: 25rem;
+//   }
+// }
 
 .projects .image-container{
   height: 16.7rem;
@@ -127,16 +124,21 @@ nav{
   }
 }
 
+// SECTIONS
 section{
   h2{
-    padding: 20px;
+    padding: 20px 0;
+    color: $color_hightlight;
+    font-weight: bold;
+    font-size: 1.7rem;
   }
 
-  h3 {
+  h3{
     font-weight: bold;
   }
 }
 
+// FOOTER
 footer{
   background-color: $color_background;
   text-align: center;
@@ -166,5 +168,4 @@ footer{
       box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
     }
   }
-
 }
