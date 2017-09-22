@@ -9,6 +9,9 @@ h2 {
   font-weight: bold;
   font-size: 1.7rem; }
 
+.highlighted {
+  color: #399bd1; }
+
 nav {
   font-weight: bold;
   font-size: 1.1rem; }
@@ -65,6 +68,9 @@ nav {
 .feature .image-container {
   height: 23.5rem; }
 
+@media only screen and (max-width: 1200px) {
+  .feature .image-container {
+    height: 25rem; } }
 .projects .image-container {
   height: 16.7rem; }
 

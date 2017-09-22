@@ -16,8 +16,8 @@ h2{
   font-size: 1.7rem;
 }
 
-h3{
-
+.highlighted{
+  color: $color_hightlight;
 }
 
 nav{
@@ -97,6 +97,12 @@ nav{
 // TODO: these have to be adjusted for smaller screensizes
 .feature .image-container{
   height: 23.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .feature .image-container{
+    height: 25rem;
+  }
 }
 
 .projects .image-container{
